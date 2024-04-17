@@ -123,7 +123,11 @@ section {
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: -33rem 0;
+  /* Prefix untuk mendukung browser yang berbeda */
+  -webkit-text-stroke: .7px var(--main-color); /* Untuk Safari */
+  -moz-text-stroke: .7px var(--main-color); /* Untuk Firefox */
 }
+
 
 .home.show-animate .home-content .text-animate h3 {
   animation: homeBgText 6s linear infinite;
